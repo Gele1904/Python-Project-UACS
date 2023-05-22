@@ -79,14 +79,37 @@ def switchPlayer():
     else:
         currentPlayer = "X"
 
+# Play again
+def playAgain():
+    while True:
+        decision = input("Do you want to play again? (Yes/No): ")
+        if decision.lower() == "yes":
+            return True
+        elif decision.lower() == "no":
+            return False
+        else:
+            print("Please choose the correct answer! (Yes/No)")
 
-# CHECK FOR WIN OR TIE AGAIN
-while gameRunning:
-    printBoard(board)
-    if winner is not None:
+# MAIN GAME LOOP AND CHECKS
+while True:
+    board = ['--', '--', '--',
+             '--', '--', '--',
+             '--', '--', '--']
+    currentPlayer = "X"
+    winner = None
+    gameRunning = True
+
+    # MAIN GAME LOOP AND CHECKS
+    while gameRunning:
+        printBoard(board)
+        if winner is not None:
+            break
+        playerInput(board)
+        if checkWin(board):
+            print(f"The winner is {winner}")
+            break
+        checkTie(board)
+        switchPlayer()
+
+    if not playAgain():
         break
-    playerInput(board)
-    if checkWin(board):
-        print(f"The winner is {winner}")
-    checkTie(board)
-    switchPlayer()
