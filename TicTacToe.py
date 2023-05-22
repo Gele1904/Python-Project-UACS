@@ -42,14 +42,14 @@ def checkRow(board):
         return True
 def checkDiagonal(board):
     global winner
-    if (board[0] == board[4] == board[5] and board[0] != "--") or (board[2] == board[4] == board[6] and board[2] != "--"):
+    if (board[0] == board[4] == board[8] and board[0] != "--") or (board[2] == board[4] == board[6] and board[2] != "--"):
         winner = currentPlayer
         return True
 def checkTie(board):
     global gameRunning
     if "--" not in board:
         printBoard(board)
-        print("Its a tie")
+        print("It's a tie")
         gameRunning = False
 
 def checkWin():
