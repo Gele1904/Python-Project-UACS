@@ -1,4 +1,5 @@
 import HangmanGame
+from TicTacToe import TicTacToe
 
 
 def playAgain():
@@ -22,7 +23,7 @@ while True:
     option = input("Choose which game you want to play (1 - 3) (4 For Exit): ")
     if option == "1":
         print("-" * 45)
-        from TicTacToe import TicTacToe
+        TicTacToe.startGame()
     elif option == "2":
         print("-" * 45)
         HangmanGame.hangMan()
