@@ -106,6 +106,7 @@ while True:
             break
         playerInput(board)
         if checkWin(board):
+            printBoard(board)
             print(f"The winner is {winner}")
             break
         checkTie(board)
