@@ -2,8 +2,8 @@ import random
 import HangmanStages
 import Word_List
 
-def hangMan():
 
+def hangMan():
     while True:
         selected_word = random.choice(Word_List.words_list)  # Randomly selects a word from the word list
         letter_guess = []
@@ -68,6 +68,3 @@ def hangMan():
         play_again = input("\033[94mDo you want to play again? (Yes/No): ").lower()
         if play_again != "yes":
             break
-
-
-hangMan()

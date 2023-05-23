@@ -1,3 +1,6 @@
+import HangmanGame
+
+
 def playAgain():
     while True:
         decision = input("Do you want to play again? (Yes/No): ")
@@ -22,7 +25,7 @@ while True:
         from TicTacToe import TicTacToe
     elif option == "2":
         print("-" * 45)
-        import HangmanGame, HangmanStages, Word_List
+        HangmanGame.hangMan()
     elif option == "3":
         print("The game is still in development!")
     elif option == "4":
