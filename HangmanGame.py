@@ -1,5 +1,5 @@
 import random
-import Hangmanstages
+import HangmanStages
 import Word_List
 
 def hangMan():
@@ -10,7 +10,6 @@ def hangMan():
         attempts = 6  # Number of attempts the player has
 
         print("\033[0mWelcome to Hangman!")
-        print(selected_word)
         print("_ " * len(selected_word))  # Prints the word with blanks
 
         while True:
@@ -18,7 +17,7 @@ def hangMan():
             # Ask the player to guess a letter or the full word
             guess = input("Guess a letter or the full word: ").lower()
 
-            Hangmanstages.print_hangMan(attempts)
+            HangmanStages.print_hangMan(attempts)
 
             # Check for guessed letters
             if guess in letter_guess:
@@ -30,7 +29,7 @@ def hangMan():
                 if guess not in selected_word:
                     attempts -= 1
                     print("\033[91mWrong guess!\033[0m")
-                    Hangmanstages.print_hangMan(attempts)  # Print hangman figure
+                    HangmanStages.print_hangMan(attempts)  # Print hangman figure
 
                 word_display = ""
                 for letter in selected_word:
@@ -54,7 +53,7 @@ def hangMan():
                 # Player loses if incorrectly guessed word
                 else:
                     print("\033[91mWrong guess, you lose!\033[0m")
-                    Hangmanstages.print_full_hangMan()
+                    HangmanStages.print_full_hangMan()
                     print("\033[91mGame over! \033[0mYou failed to guess the word, better luck next time!")
                     print("The correct word was: " + selected_word)
                     break
