@@ -80,6 +80,8 @@ def switchPlayer():
         currentPlayer = "X"
 
 # Play again
+
+
 def playAgain():
     while True:
         decision = input("Do you want to play again? (Yes/No): ")
@@ -91,6 +93,8 @@ def playAgain():
             print("Please choose the correct answer! (Yes/No)")
 
 # MAIN GAME LOOP AND CHECKS
+
+
 while True:
     board = ['--', '--', '--',
              '--', '--', '--',
