@@ -1,3 +1,4 @@
+print("-" * 45)
 print("Welcome to our game menu, choose your game!")
 print("1. Tic Tac Toe")
 print("2. Hangman")
