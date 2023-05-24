@@ -14,5 +14,5 @@ The project involves three different games.
  - Luka Skof ID: 4911
  - Dea Bibovska ID: 5305
  - Mihaela Milosevska ID: 5163
- - Viktor Lozanovski ID:
- - Darko Petrevski ID:
+ - Viktor Lozanovski ID: 5094
+ - Darko Petrevski ID: 5088
