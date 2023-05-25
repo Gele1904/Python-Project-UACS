@@ -4,9 +4,9 @@ import RockPaperScissors
 import Instructions
 
 
-def playAgain():
+def chooseAgain():
     while True:
-        decision = input("Do you want to play again? (Yes/No): ")
+        decision = input("Do you want to choose again? (Yes/No): ")
         if decision.lower() == "yes":
             return True
         elif decision.lower() == "no":
@@ -21,14 +21,14 @@ while True:
     print("1. Tic Tac Toe")
     print("2. Hangman")
     print("3. Rock Paper Scissors")
-    print("\033[31m\033[1m0. Exit\033[0m")
+    print("\033[31m0. Exit\033[0m")
     print("-" * 45)
     print("Instructions")
     print("4. Tic Tac Toe Instructions")
     print("5. Hangman Instructions")
     print("6. Rock Paper Scissors Instructions")
     print(" ")
-    option = int(input("Choose which game you want to play (1 - 3) (4 For Exit): "))
+    option = int(input("Choose one of the following options (1 - 6) (0 For Exit): "))
     if option == 1:
         print("-" * 45)
         TicTacToe.TicTacToe()
@@ -46,7 +46,7 @@ while True:
     elif option == 0:
         break
     else:
-        print("You chose a wrong number!")
+        print("\033[31mWrong option (Select 1 - 6)!")
 
-        if not playAgain():
+        if not chooseAgain():
             break
