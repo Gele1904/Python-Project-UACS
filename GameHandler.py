@@ -18,7 +18,7 @@ while True:
     print("\033[0mWelcome to our game menu, choose your game!")
     print("1. Tic Tac Toe")
     print("2. Hangman")
-    print("3. -----------")
+    print("3. Rock Paper Scissors")
     print("4. Exit")
     option = input("Choose which game you want to play (1 - 3) (4 For Exit): ")
     if option == "1":
