@@ -36,7 +36,7 @@ while True:
         print("-" * 45)
         HangmanGame.HangMan()
     elif option == 3:
-        RockPaperScissors.rock_paper_scissors()
+        RockPaperScissors.Rock_Paper_Scissors()
     elif option == 4:
         Instructions.TicTacToeInstructions()
     elif option == 5:

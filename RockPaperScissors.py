@@ -1,7 +1,7 @@
 import random
 
 
-def rock_paper_scissors():
+def Rock_Paper_Scissors():
     def winner(player, computer):
         if player == computer:
             return "tie"
