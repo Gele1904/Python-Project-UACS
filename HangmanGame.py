@@ -3,7 +3,7 @@ import HangmanStages
 import Word_List
 
 
-def hangMan():
+def HangMan():
     while True:
         selected_word = random.choice(Word_List.words_list)  # Randomly selects a word from the word list
         letter_guess = []
